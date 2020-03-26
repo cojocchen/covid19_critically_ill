@@ -206,9 +206,9 @@ def predict_batch_nfold(
     # save result
     df['score_dl'] = dl
     df['score_final'] = res['score']
-    df['survival_5days'] = res['prob']['5days']
-    df['survival_10days'] = res['prob']['10days']
-    df['survival_30days'] = res['prob']['30days']
+    df['survival_5days'] = 1-res['prob']['5days']
+    df['survival_10days'] = 1-res['prob']['10days']
+    df['survival_30days'] = 1-res['prob']['30days']
     df.to_csv(fname_output)
     print('--file saved to:',fname_output)
 

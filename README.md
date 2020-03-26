@@ -22,7 +22,7 @@ If there is missing value, data imputation requires R.
 
 ## Data
 
-Data are all in csv format. Results will be saved in CSV format as well.
+Data are all in csv format. Results will be saved in csv format as well.
 
 ### Input file format
 
@@ -77,15 +77,15 @@ All models should be stored in models fold. Please unzip the models.zip file and
 * code_root
   * models
     * fold_0
-      * checkpoint
+      * model.meta 
     * fold_1
-      * checkpoint
+      * model.meta
     * fold_2
-      * checkpoint
+      * model.meta
     * fold_3
-      * checkpoint
+      * model.meta
     * fold_4
-      * checkpoint
+      * model.meta
     * imputation.csv
 
 ## Preprocess
@@ -130,4 +130,5 @@ recall | recall value with different cut-offs assuming all right-censored sample
 
 ## Disclaimer
 This tool is for research purpose and not approved for clinical use.
+
 This is not an official Tencent product.
