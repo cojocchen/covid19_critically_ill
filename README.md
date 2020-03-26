@@ -117,9 +117,9 @@ survival_30days | 30 days critically ill probability
 
 Evaluation code will analysis predictions. To run:
 ```
-python evaluation.py input.csv_processed.csv_prediction.py truth.py
+python evaluation.py input.csv_processed.csv_prediction.csv truth.csv
 ```
-"input.csv" can be replaced with the name of your input file. "truth.py" can be replaced with the truth file that meet the format requirement. A file with name [INPUT]_processed.csv_prediction.csv_evaluation.csv will be saved containing the evaluation results. Use this file as the input of next step.
+"input.csv" can be replaced with the name of your input file. "truth.csv" can be replaced with the truth file that meet the format requirement. A file with name [INPUT]_processed.csv_prediction.csv_evaluation.csv will be saved containing the evaluation results. Use this file as the input of next step.
 
 Following analysis will be conducted on "survival_30days" with 95% confidence inter computed as well:
  Value | Explaination
