@@ -137,7 +137,7 @@ class Model_COX_DL(object):
                         ('NLR', 0.02040950),
                         ('Creatine.kinase', 0.05368482),
                         ('Direct.bilirubin', 0.03486548),
-                        ('Deepsurv', 1.50393931)]
+                        ('DL.feature', 1.50393931)]
                     )
         self.cumulative_base_hazard = config.get('cumulative_base_hazard',
                     [('5days', 0.03552347),
@@ -198,7 +198,7 @@ def predict_batch_nfold(
     # compute 5 fold deepsurv
     dl = model.predict(test_data)
     # append dl result to the dictionary
-    test_data['Deepsurv'] = dl.flatten()
+    test_data['DL.feature'] = dl.flatten()
     print('--predict deepsurv model: done')
     # compute final probabilities
     res = cox.predict(test_data)
