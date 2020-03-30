@@ -100,7 +100,7 @@ python preprocess.py input.csv
 
 Prediction code will predict risk scores and survival probability for each sample.
 ```
-python preprocess.py input.csv_processed.csv
+python prediction.py input.csv_processed.csv
 ```
 "input.csv" can be replaced with the name of your input file. A file with name [INPUT]_processed.csv_prediction.csv will be saved containing the prediction results. Use this file as the input of next step.
 
