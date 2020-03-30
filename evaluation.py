@@ -10,8 +10,7 @@ import seaborn as sns
 from sklearn.model_selection import train_test_split, KFold
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import roc_auc_score, roc_curve, recall_score
-from sksurv.ensemble import GradientBoostingSurvivalAnalysis
-from sksurv.metrics import cumulative_dynamic_auc, concordance_index_censored
+from sksurv.metrics import concordance_index_censored
 from scipy.stats import fisher_exact, chisquare, mannwhitneyu
 
 pd.options.mode.chained_assignment = None
