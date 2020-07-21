@@ -1,6 +1,8 @@
 # Early Triage of Critically-ill COVID-19 Patients using Deep Learning
 
-This package provides an implementation of the prediction and analysis of early triage of critically-ill COVID-19 patients using deep learning
+This package provides an implementation of the prediction and analysis of early triage of critically-ill COVID-19 patients using deep learning.
+
+More details can be found in paper: https://www.nature.com/articles/s41467-020-17280-8
 
 ## Setup
 
