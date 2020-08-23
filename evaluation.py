@@ -7,8 +7,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-from sklearn.model_selection import train_test_split, KFold
-from sklearn.ensemble import RandomForestRegressor
+from sklearn.model_selection import train_test_split
 from sklearn.metrics import roc_auc_score, roc_curve, recall_score
 from sksurv.metrics import concordance_index_censored
 from scipy.stats import fisher_exact, chisquare, mannwhitneyu
